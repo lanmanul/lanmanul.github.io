@@ -89,6 +89,6 @@ let usercard = document.getElementById("usercard");
 
 let p = document.createElement("p");
 
-p.InnerText = '${tg.initDatasafe.first_name}${tg.initDatasafe.last_name}';
+p.InnerText = '${tg.initDatasafe.user.first_name}${tg.initDatasafe.user.last_name}';
 
 usercard.appendChild(p);
