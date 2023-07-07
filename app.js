@@ -88,6 +88,11 @@ Telegram.WebApp.onEvent("mainButtonClicked", function(){
 	tg.sendData(item);
 });
 
+Telegram.WebApp.offEvent("backButtonClicked", function(){
+	tg.sendData(item);
+});
+
+
 let usercard = document.getElementById("usercard");
 
 let p = document.createElement("p");
