@@ -72,14 +72,15 @@ btn5.addEventListener("click", function(){
 	}
 });
 
+
 btn6.addEventListener("click", function(){
-	if (tg.MainButton.isVisible) {
-		tg.MainButton.hide();
+	if (tg.BackButton.isVisible) {
+		tg.BackButton.hide();
 	}
 	else {
-		tg.MainButton.setText("Вы выбрали товар 6!");
+		tg.BackButton.setText("Вы выбрали товар 6!");
 		item = "6";
-		tg.MainButton.show();
+		tg.BackButton.show();
 	}
 });
 
@@ -87,6 +88,10 @@ btn6.addEventListener("click", function(){
 Telegram.WebApp.onEvent("mainButtonClicked", function(){
 	tg.sendData(item);
 });
+Telegram.WebApp.onEvent("backButtonClicked", function(){
+	tg.sendData(item);
+});
+
 
 Telegram.WebApp.offEvent("backButtonClicked", function(){
 	tg.sendData(item);
