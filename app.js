@@ -4,8 +4,7 @@ tg.expand()
 
 tg.MainButton.textColor = "#FFFFFF";
 tg.MainButton.color = "#2cab37";
-tg.BackButton.textColor = "#FFFFFF";
-tg.BackButton.color = "#2cab37";
+
 
 
 let item = "";
